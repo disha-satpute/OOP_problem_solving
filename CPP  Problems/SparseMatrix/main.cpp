@@ -38,7 +38,7 @@ void sparcematrix::displayTriplet()
     {
         cout << triplet[i][0] << " " << triplet[i][1] << " " << triplet[i][2] << endl;
     }
-}   
+} 
 
 void sparcematrix::addTriplet(sparcematrix s2)
 {
