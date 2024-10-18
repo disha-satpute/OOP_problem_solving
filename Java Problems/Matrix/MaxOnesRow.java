@@ -1,5 +1,6 @@
 public class MaxOnesRow {
     // Function to find the first row with the maximum number of 1's
+    
     public static int rowWithMax1s(int[][] matrix) {
         int n = matrix.length; // Number of rows
         if (n == 0) return -1; // Handle empty matrix case
