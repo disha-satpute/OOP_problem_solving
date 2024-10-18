@@ -1,11 +1,11 @@
 import java.util.Arrays;
 
 public class SortMatrix {
-    // Function to sort the matrix
+
     public static void sortMatrix(int[][] matrix) {
         int N = matrix.length;
         int[] arr = new int[N * N];
-        
+
         // Step 1: Flatten the matrix into an array
         int index = 0;
         for (int i = 0; i < N; i++) {
@@ -13,10 +13,10 @@ public class SortMatrix {
                 arr[index++] = matrix[i][j];
             }
         }
-        
+
         // Step 2: Sort the array
         Arrays.sort(arr);
-        
+
         // Step 3: Fill the matrix with sorted elements
         index = 0;
         for (int i = 0; i < N; i++) {
