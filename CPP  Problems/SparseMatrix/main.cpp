@@ -51,7 +51,7 @@ void sparcematrix::addTriplet(sparcematrix s2)
 
         while (i <= n && j <= s2.n)
         {
-            if (triplet[i][0] < s2.triplet[j][0] || 
+            if (triplet[i][0] < s2.triplet[j][0] ||
                (triplet[i][0] == s2.triplet[j][0] && triplet[i][1] < s2.triplet[j][1]))
             {
                 result[k][0] = triplet[i][0];
