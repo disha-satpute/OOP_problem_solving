@@ -8,7 +8,10 @@ public class LowerTriangularMatrix {
         System.out.println("Lower Triangular Matrix:");
 
         for (int i = 0; i < rows; i++) {
+
+
             for (int j = 0; j < cols; j++) {
+
                 // Check if we are in the lower triangular part
                 if (i >= j) {
                     System.out.print(matrix[i][j] + " ");
