@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class GCDOfNumbers {
 
-    // Method to compute GCD of two numbers using the Euclidean algorithm
     public static int gcd(int a, int b) {
         while (b != 0) {
             int temp = b;
@@ -12,7 +11,6 @@ public class GCDOfNumbers {
         return a;
     }
 
-    // Method to compute GCD of an array of numbers
     public static int findGCD(int[] numbers) {
         int result = numbers[0]; // Start with the first number
         for (int i = 1; i < numbers.length; i++) {
