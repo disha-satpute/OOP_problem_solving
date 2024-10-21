@@ -17,10 +17,10 @@
              i++;
          }
 
-         // Check for a zero after skipping leading zeros
+
          while (i < num.length()) {
              if (num.charAt(i) == '0') {
-                 isDuck = true;  // Found a zero, hence it is a Duck number
+                 isDuck = true;
                  break;
              }
              i++;
