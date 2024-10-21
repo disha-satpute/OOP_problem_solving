@@ -2,11 +2,8 @@ import java.util.*;
 import java.lang.*;
 
 class calculator{
-
     public static void main(String args[]){
-
     Scanner sc = new Scanner(System.in);
-
     System.out.println("1.Addition\n2.Subtraction\n3.Multiplication\n.4.Division");
     int ch = sc.nextInt();
 
