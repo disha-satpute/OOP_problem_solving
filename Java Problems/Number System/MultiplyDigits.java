@@ -8,8 +8,8 @@ public class MultiplyDigits {
         
         // Loop to extract and multiply each digit
         while (num > 0) {
-            int digit = num % 10;  // Extract the last digit
-            product *= digit;      // Multiply the digit with the current product
+           // int digit = num % 10;  // Extract the last digit
+            product *= num%10;      // Multiply the digit with the current product
             num /= 10;             // Remove the last digit from the number
         }
 

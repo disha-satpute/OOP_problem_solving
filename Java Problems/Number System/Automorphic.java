@@ -21,7 +21,7 @@ public class Automorphic {
         System.out.print("Enter a number: ");
         int num = scanner.nextInt();
 
-        if (isAutomorphic(num)) 
+        if (isAutomorphic(num))
         {
             System.out.println(num + " is an Automorphic number.");
         } 

@@ -1,5 +1,5 @@
 public class MessageEncoding {
-
+    
     // Function to encode the message using matrix multiplication
     public static int[] encodeMessage(String message, int[][] keyMatrix) {
         // Convert message to numerical values
@@ -9,7 +9,7 @@ public class MessageEncoding {
             // Map characters A-Z to 1-26, space to 27
             messageVector[i] = (ch == ' ') ? 27 : (ch - 'A' + 1);
         }
-
+        
         // Calculate the encoded message using the key matrix
         int[] encodedVector = new int[keyMatrix.length];
         for (int i = 0; i < keyMatrix.length; i++) {

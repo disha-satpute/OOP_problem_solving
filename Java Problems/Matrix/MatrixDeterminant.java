@@ -1,9 +1,10 @@
 // Find Determinant of a given Matrix.
 public class MatrixDeterminant {
-
+    // Function to calculate the determinant of a matrix
     public static double determinant(double[][] matrix) {
         int n = matrix.length;
-
+        
+        // Base case for 2x2 matrix
         if (n == 2) {
             return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0];
         }

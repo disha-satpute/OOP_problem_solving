@@ -6,9 +6,7 @@ public class UpperTriangularMatrix {
         System.out.println("Upper Triangular Matrix:");
 
         for (int i = 0; i < rows; i++) {
-
             for (int j = 0; j < cols; j++) {
-
                 // Check if we are in the upper triangular part
                 if (i <= j) {
                     System.out.print(matrix[i][j] + " ");

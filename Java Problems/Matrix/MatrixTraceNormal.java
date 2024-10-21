@@ -5,7 +5,7 @@ public class MatrixTraceNormal {
     public static void calculateTraceAndNormal(int[][] matrix) {
         int N = matrix.length; // Number of rows
         int M = matrix[0].length; // Number of columns
-
+        
         int trace = 0; // Initialize trace
         double normal = 0.0; // Initialize normal
 

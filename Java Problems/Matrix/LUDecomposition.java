@@ -9,7 +9,7 @@ public class LUDecomposition {
         for (int i = 0; i < n; i++) {
             // Upper Triangular U
             for (int j = i; j < n; j++) {
-          U[i][j] = matrix[i][j];
+                U[i][j] = matrix[i][j];
                 for (int k = 0; k < i; k++) {
                     U[i][j] -= L[i][k] * U[k][j];
                 }

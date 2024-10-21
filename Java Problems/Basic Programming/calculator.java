@@ -45,6 +45,6 @@ class calculator{
 
             default :
             System.out.println("Enter Valid Choice")
-            break;
+            break;9
     }}
 }
