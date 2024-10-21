@@ -1,8 +1,6 @@
 /*Find out whether a given number is a Duck number or not.
  A Duck number is a number which has zeroes present in it, but there should be no zero present in the beginning of the number. */
 
- /*Find out the Factorial of a given number.*/
-
 import java.util.*;
 
 class DuckNo{

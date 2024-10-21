@@ -2,16 +2,16 @@
 //Given a boolean matrix of 0’s and 1’s, find and print the largest square sub-matrix whose all the entries are 1.
 
 public class LargestSquareSubmatrix {
-    // Function to find the largest square sub-matrix of 1's
+
     public static void findLargestSquareSubmatrix(int[][] matrix) {
         int n = matrix.length;
         if (n == 0) return;
         int m = matrix[0].length;
 
         int[][] dp = new int[n][m];
-        int maxSize = 0; // Size of the largest square
-        int maxRow = 0; // Row index of the bottom-right corner
-        int maxCol = 0; // Column index of the bottom-right corner
+        int maxSize = 0;
+        int maxRow = 0;
+        int maxCol = 0;
 
         // Fill the DP table
         for (int i = 0; i < n; i++) {
