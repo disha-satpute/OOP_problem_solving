@@ -1,4 +1,4 @@
-public class NumberTraingle {
+public class NumberTraingle2 {
     public static void main(String[] args) {
         int rows = 5; 
         int num = 1;

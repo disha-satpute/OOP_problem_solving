@@ -3,7 +3,6 @@
 import java.util.*;
 import java.lang.*;
 
-
 class number_To_word{
     public static void main(String args[]){
         scanner sc= new scanner(System.in);
