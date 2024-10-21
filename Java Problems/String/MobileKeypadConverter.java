@@ -39,6 +39,7 @@ public class MobileKeypadConverter {
         keypadMap.put('Z', "9999");
         keypadMap.put(' ', "0"); // Space
 
+
         StringBuilder result = new StringBuilder();
         for (char ch : sentence.toUpperCase().toCharArray()) {
             if (keypadMap.containsKey(ch)) {
