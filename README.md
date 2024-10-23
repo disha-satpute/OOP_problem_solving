@@ -1,2 +1,2 @@
 # OOP_problem_solving
-C++ and Java
+C++ and Java problems
