@@ -7,7 +7,7 @@ public:
     int reservationID;
     string passengerName;
     string trainName;
-    int seatNumber;  // Added seat attribute
+    int seatNumber;
     Node* next;
 
     Node(int id, string name, string train, int seat) 
@@ -108,7 +108,7 @@ public:
             if (temp->reservationID == id) {
                 temp->passengerName = newName;
                 temp->trainName = newTrain;
-                temp->seatNumber = newSeat;  // Update seat number
+                temp->seatNumber = newSeat;
                 cout << "Reservation with ID " << id << " has been updated." << endl;
                 return;
             }
