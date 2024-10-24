@@ -4,7 +4,7 @@
 using namespace std;
 
 struct Order {
-    int id;             // Order ID
+    int id;
     string type;
     int quantity;
     double price;
@@ -17,7 +17,7 @@ class CircularLinkedList {
 private:
     Order* tail;
     int currentOrders;
-    int nextOrderId;   // To keep track of the next order ID
+    int nextOrderId;
 
 public:
     CircularLinkedList() : tail(nullptr), currentOrders(0), nextOrderId(1) {} // No maxOrders
@@ -45,12 +45,12 @@ public:
     }
 
     double getPrice(const string& type) {
-        // Predefined prices for pizza types using if-else statements
+
         if (type == "Paneer") return 120.00;
         if (type == "Cheese") return 150.00;
         if (type == "Double Cheese") return 170.00;
         if (type == "Veggie") return 200.00;
-        return -1; // Invalid type
+        return -1;
     }
     void deleteOrder() {
         if (!tail) {
@@ -106,7 +106,7 @@ public:
                 << " (Quantity: " << current->quantity
                 << ", Price: $" << fixed << setprecision(2) << current->price << ")" << endl;
             current = current->next;
-        } while (current != tail->next); // Loop until we circle back to the start
+        } while (current != tail->next);
         cout << endl;
     }
 
@@ -126,7 +126,7 @@ public:
 };
 
 int main() {
-    CircularLinkedList orders; // No max orders limit
+    CircularLinkedList orders;
     int choice;
     string type;
     int quantity;
