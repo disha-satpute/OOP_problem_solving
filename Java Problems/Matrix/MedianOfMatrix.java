@@ -40,7 +40,7 @@ public class MedianOfMatrix {
             }
         }
 
-        return left; // This will be the median
+        return left; //  median
     }
 
     public static void main(String[] args) {
