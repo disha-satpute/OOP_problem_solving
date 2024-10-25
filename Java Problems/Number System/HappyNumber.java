@@ -19,7 +19,7 @@ public class HappyNumber {
         int sum = 0;
 
         while (num > 0) {
-            int digit = num % 10;  
+            int digit = num % 10;
             sum += digit * digit;
             num /= 10;
         }

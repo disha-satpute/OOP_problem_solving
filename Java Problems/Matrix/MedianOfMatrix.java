@@ -1,46 +1,42 @@
 public class MedianOfMatrix {
-    // Function to count elements less than or equal to x
     private static int countLessEqual(int[][] matrix, int x) {
         int count = 0;
         int R = matrix.length;
         int C = matrix[0].length;
 
-        int row = R - 1; // Start from the last row
-        int col = 0;     // Start from the first column
+        int row = R - 1;
+        int col = 0;
 
-        // Traverse the matrix
+
         while (row >= 0 && col < C) {
             if (matrix[row][col] <= x) {
-                // If the current element is less than or equal to x,
-                // all elements above this in the same column are also less than or equal to x
                 count += (row + 1);
-                col++; // Move to the next column
+                col++;
             } else {
-                row--; // Move to the previous row
+                row--;
             }
         }
 
         return count;
     }
 
-    // Function to find the median of the matrix
     public static int findMedian(int[][] matrix) {
         int R = matrix.length;
         int C = matrix[0].length;
         int totalElements = R * C;
 
-        int left = matrix[0][0]; // Minimum element
-        int right = matrix[R - 1][C - 1]; // Maximum element
-        int desiredCount = totalElements / 2; // Median index
+        int left = matrix[0][0];
+        int right = matrix[R - 1][C - 1];
+        int desiredCount = totalElements / 2; 
 
         while (left < right) {
-            int mid = left + (right - left) / 2; // Avoid overflow
+            int mid = left + (right - left) / 2; 
             int count = countLessEqual(matrix, mid);
 
             if (count <= desiredCount) {
-                left = mid + 1; // Move to the right
+                left = mid + 1; 
             } else {
-                right = mid; // Move to the left
+                right = mid;
             }
         }
 
