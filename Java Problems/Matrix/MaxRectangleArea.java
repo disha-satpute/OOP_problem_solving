@@ -12,7 +12,7 @@ public class MaxRectangleArea {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-      
+
                 heights[j] = matrix[i][j] == 0 ? 0 : heights[j] + 1;
             }
 
