@@ -1,12 +1,12 @@
 public class MatrixSumProduct {
     public static void calculateSumAndProduct(int[][] matrix) {
         int sum = 0;
-        long product = 1; // Use long to handle large products
+        long product = 1; 
 
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                sum += matrix[i][j];        // Add the element to sum
-                product *= matrix[i][j];    // Multiply the element to product
+                sum += matrix[i][j];       
+                product *= matrix[i][j]; 
             }
         }
 

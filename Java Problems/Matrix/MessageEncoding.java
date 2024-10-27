@@ -1,16 +1,14 @@
 public class MessageEncoding {
-    
-    // Function to encode the message using matrix multiplication
+
     public static int[] encodeMessage(String message, int[][] keyMatrix) {
-        // Convert message to numerical values
+
         int[] messageVector = new int[message.length()];
         for (int i = 0; i < message.length(); i++) {
             char ch = message.charAt(i);
-            // Map characters A-Z to 1-26, space to 27
+ 
             messageVector[i] = (ch == ' ') ? 27 : (ch - 'A' + 1);
         }
-        
-        // Calculate the encoded message using the key matrix
+
         int[] encodedVector = new int[keyMatrix.length];
         for (int i = 0; i < keyMatrix.length; i++) {
             for (int j = 0; j < keyMatrix[0].length; j++) {
@@ -56,7 +54,6 @@ public class MessageEncoding {
         }
         System.out.println();
 
-        // Decode the message back
         String decodedMessage = decodeMessage(encodedVector);
         System.out.println("Decoded Message: " + decodedMessage);
     }
