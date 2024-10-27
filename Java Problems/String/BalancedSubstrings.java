@@ -1,6 +1,6 @@
 public class BalancedSubstrings {
     public static void main(String[] args) {
-        String str = "00110011"; // Example input
+        String str = "00110011";
         int result = maxBalancedSubstrings(str);
         System.out.println(result);
     }
@@ -16,19 +16,17 @@ public class BalancedSubstrings {
             } else if (c == '1') {
                 count1++;
             } else {
-                return -1; // Invalid character in the string
+                return -1;
             }
 
-            // Check if counts are equal
             if (count0 == count1) {
-                balancedCount++; // Found a balanced substring
-                // Reset counts for the next substring
+                balancedCount++;
+
                 count0 = 0;
                 count1 = 0;
             }
         }
 
-        // If we found no balanced substrings, return -1
         return balancedCount > 0 ? balancedCount : -1;
     }
 }
