@@ -4,13 +4,12 @@ import java.util.Scanner;
 
 public class UglyNumberChecker {
 
-    // Function to check if a number is an Ugly number
+
     public static boolean isUgly(int number) {
         if (number <= 0) {
-            return false; // Ugly numbers are positive
+            return false;
         }
 
-        // Divide by 2, 3, and 5 repeatedly
         while (number % 2 == 0) {
             number /= 2;
         }
@@ -21,7 +20,6 @@ public class UglyNumberChecker {
             number /= 5;
         }
 
-        // If the resulting number is 1, it's an Ugly number
         return number == 1;
     }
 
@@ -30,7 +28,6 @@ public class UglyNumberChecker {
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
 
-        // Check if the number is an Ugly number
         if (isUgly(number)) {
             System.out.println(number + " is an Ugly Number.");
         } else {
