@@ -7,14 +7,13 @@ public class HappyNumber {
         int fast = num;
 
         do {
-            slow = sumOfSquares(slow);  // Move slow pointer 
-            fast = sumOfSquares(sumOfSquares(fast));  // Move fast pointer 
-        } while (slow != fast);  // Loop until both pointers meet
+            slow = sumOfSquares(slow);
+            fast = sumOfSquares(sumOfSquares(fast));
+        } while (slow != fast);
 
-        return slow == 1;  // If the loop ends because slow == 1, it is a happy number
+        return slow == 1; 
     }
 
-    // Method to calculate the sum of squares of digits
     public static int sumOfSquares(int num) {
         int sum = 0;
 
