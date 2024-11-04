@@ -7,11 +7,11 @@ public class CountAndSay {
 
     public static String countAndSay(int n) {
         if (n == 1) return "1"; // Base case
-        
+
         // Get the (n-1)th term
         String previousTerm = countAndSay(n - 1);
         StringBuilder currentTerm = new StringBuilder();
-        
+
         // Count and describe the previous term
         int count = 1;
         for (int i = 1; i < previousTerm.length(); i++) {
@@ -23,10 +23,10 @@ public class CountAndSay {
                 count = 1; // Reset count for the new digit
             }
         }
-        
+
         // Handle the last group of digits
         currentTerm.append(count).append(previousTerm.charAt(previousTerm.length() - 1));
-        
+
         return currentTerm.toString(); // Return the current term
     }
 }
