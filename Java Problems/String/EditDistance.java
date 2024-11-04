@@ -9,7 +9,7 @@ public class EditDistance {
     public static int minDistance(String s, String t) {
         int m = s.length();
         int n = t.length();
-        
+
         // Create a DP table
         int[][] dp = new int[m + 1][n + 1];
 
