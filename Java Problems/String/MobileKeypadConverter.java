@@ -43,8 +43,7 @@ public class MobileKeypadConverter {
         StringBuilder result = new StringBuilder();
         for (char ch : sentence.toUpperCase().toCharArray()) {
             if (keypadMap.containsKey(ch)) {
-                result.append(keypadMap.get(ch));
-            }
+                result.append(keypadMap.get(ch)); }
         }
 
         return result.toString();
