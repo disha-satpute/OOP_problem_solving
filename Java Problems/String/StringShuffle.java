@@ -14,11 +14,7 @@ public class StringShuffle {
         if (s1.length() + s2.length() != s3.length()) {
             return false;
         }
-
-        
         int i = 0, j = 0;
-
-       
         for (char c : s3.toCharArray()) {
             if (i < s1.length() && c == s1.charAt(i)) {
                 i++; 
