@@ -11,7 +11,7 @@ public class PalindromeCheck {
     public static boolean isPalindrome(String S) {
         int left = 0; // Start pointer
         int right = S.length() - 1; // End pointer
-        
+
         // Check characters from both ends
         while (left < right) {
             if (S.charAt(left) != S.charAt(right)) {
