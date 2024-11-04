@@ -8,7 +8,7 @@ public class StringReversal {
     public static void reverseString(char[] s) {
         int left = 0;
         int right = s.length - 1;
-        
+
         while (left < right) {
             // Swap characters
             char temp = s[left];
