@@ -59,8 +59,8 @@ void deleteNode(int RollNo) {
    struct Node* prev = NULL;
 
    while (current != NULL && current->RollNo != RollNo) {
-      prev = current;            
-      current = current->next; 
+      prev = current;
+      current = current->next;
    }
 
 
@@ -91,8 +91,7 @@ void updateNode(int RollNo) {
    cout << "Updating details for Roll No " << RollNo << ":\n";
 
    cout << "Enter new Name: ";
-   cin.ignore();
-   getline(cin, current->name);
+   cin >> current->name;
 
    cout << "Enter new Contact No: ";
    cin >> current->contact_no;
@@ -101,12 +100,13 @@ void updateNode(int RollNo) {
    cin >> current->CGPA;
 
    cout << "Enter new Company Name: ";
-   cin.ignore();
-   getline(cin, current->company_name);
+   cin >> current->company_name;
 
    cout << "Record updated successfully.\n";
 }
-
+void sort(){
+   No
+}
 
 
 int main() {
@@ -123,7 +123,8 @@ int main() {
       cout << "2. Delete a student record\n";
       cout << "3. Update a student record\n";
       cout << "4. Display all student records\n";
-      cout << "5. Exit\n";
+      cout <<"5.Sort the records\n";
+      cout << "6. Exit\n";
       cout << "Enter your choice: ";
       cin >> choice;
 
@@ -132,15 +133,13 @@ int main() {
             cout << "Enter Roll No: ";
             cin >> RollNo;
             cout << "Enter Name: ";
-            cin.ignore();
-            getline(cin, name);
+            cin >> name
             cout << "Enter Contact No: ";
             cin >> contact_no;
             cout << "Enter CGPA: ";
             cin >> CGPA;
             cout << "Enter Company Name: ";
-            cin.ignore();
-            getline(cin, company_name);
+            cin >> company_name;
             insert(RollNo, name, contact_no, CGPA, company_name);
             cout << "Student record inserted.\n";
             break;
@@ -161,8 +160,11 @@ int main() {
             cout << "Displaying student records:\n";
             display();
             break;
+         case 5 :
+          cout << Sorted List :\n";
+          sort();
 
-         case 5:
+         case 6:
             cout << "Exiting program.\n";
             break;
 
