@@ -128,14 +128,14 @@ int main()
   cout<<"\n1.Input restricted Queue\n2.Output restricted Queue\n3.Exit\nEnter choice:"; 
   cin>>ch; 
   switch(ch) 
-  { 
+  {
    case 1: 
-   { 
-    do 
-    { 
+   {
+    do
+    {
      cout<<"\n1.Insert\n2.Delete at front\n3.Delete at rear\n4.Display\n5.Exit\nEnter choice:"; 
-     cin>>ch1; 
-     switch(ch1) 
+     cin>>ch1;
+     switch(ch1)
      { 
       case 1: 
       { 
