@@ -89,8 +89,8 @@ cout << "Enter customer name: ";
 } 
 //DELETE 
 void book_store::del(){ 
-id--; 
-} 
+id--;
+}
 //INSERT 
 void book_store::insert(int iid){ 
 id = iid; 
